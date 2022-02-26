@@ -19,7 +19,7 @@
     "lint": "eslint src",
     "precommit": "lint-staged",
     "release": "standart-version",
-    "start": "API_PORT=3001 nodemon index.js",
+    "start": "API_PORT=3001 nodemon index.js  --ignore client",
     "test": "jest"
   },
   "config": {
@@ -63,6 +63,7 @@
     "koa-jwt": "3.3.1",
     "koa-multer": "1.0.2",
     "koa-router": "7.4.0",
-    "pg": "7.4.3"
+    "morgan": "^1.10.0",
+    "pg": "^8"
   }
 }
