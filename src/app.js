@@ -27,8 +27,8 @@ app.use(logger());
 app
   .use(bodyParser())
   .use(cors())
-  .use(koajwt({ secret: process.env.API_SECRET })
-    .unless({ path: '/login', method: 'POST' }))
+  // .use(koajwt({ secret: process.env.API_SECRET })
+  //   .unless({ path: '/login', method: 'POST' }))
   .use(router.routes())
   .use(router.allowedMethods());
 
